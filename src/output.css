@@ -240,8 +240,14 @@
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
+  .max-h-fit {
+    max-height: fit-content;
+  }
   .w-14 {
     width: calc(var(--spacing) * 14);
+  }
+  .w-fit {
+    width: fit-content;
   }
   .max-w-screen-sm {
     max-width: var(--breakpoint-sm);
@@ -638,16 +644,6 @@
       flex-direction: column;
     }
   }
-  .\*\:place-content-center {
-    :is(& > *) {
-      place-content: center;
-    }
-  }
-  .\*\:place-items-center {
-    :is(& > *) {
-      place-items: center;
-    }
-  }
   .\*\:items-center {
     :is(& > *) {
       align-items: center;
@@ -656,11 +652,6 @@
   .\*\:justify-center {
     :is(& > *) {
       justify-content: center;
-    }
-  }
-  .\*\:justify-start {
-    :is(& > *) {
-      justify-content: flex-start;
     }
   }
   .\*\:space-y-4 {
